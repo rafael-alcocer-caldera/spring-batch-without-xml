@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Implementation-Title: SpringBatch
 Implementation-Version: 0.0.1
 Built-By: rafael.alcocer
-Implementation-Vendor-Id: com.javasampleapproach
+Implementation-Vendor-Id: rafael.alcocer.caldera
 Build-Jdk: 1.8.0_131
 Implementation-URL: http://projects.spring.io/spring-boot/springbatch/
 Created-By: Maven Integration for Eclipse
