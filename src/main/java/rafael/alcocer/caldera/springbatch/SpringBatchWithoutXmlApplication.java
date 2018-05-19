@@ -42,7 +42,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @EnableBatchProcessing
 public class SpringBatchWithoutXmlApplication {
 
-    public static void main(String[] args) {
-	SpringApplication.run(SpringBatchWithoutXmlApplication.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(SpringBatchWithoutXmlApplication.class, args);
+	}
 }

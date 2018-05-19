@@ -39,23 +39,23 @@ import rafael.alcocer.caldera.springbatch.step.Writer;
 @Configuration
 public class BatchConfig {
 
-    @Autowired
-    private JobBuilderFactory jobBuilderFactory;
+	@Autowired
+	private JobBuilderFactory jobBuilderFactory;
 
-    @Autowired
-    private StepBuilderFactory stepBuilderFactory;
+	@Autowired
+	private StepBuilderFactory stepBuilderFactory;
 
-    @Value("${chunk-size}")
-    private int chunkSize;
+	@Value("${chunk-size}")
+	private int chunkSize;
 
-    @Bean
-    public Job job() {
-	return jobBuilderFactory.get("job").incrementer(new RunIdIncrementer()).flow(step1()).end().build();
-    }
+	@Bean
+	public Job job() {
+		return jobBuilderFactory.get("job").incrementer(new RunIdIncrementer()).flow(step1()).end().build();
+	}
 
-    @Bean
-    public Step step1() {
-	return stepBuilderFactory.get("step1").<String, String>chunk(chunkSize).reader(new Reader())
-		.processor(new Processor()).writer(new Writer()).build();
-    }
+	@Bean
+	public Step step1() {
+		return stepBuilderFactory.get("step1").<String, String>chunk(chunkSize).reader(new Reader())
+				.processor(new Processor()).writer(new Writer()).build();
+	}
 }
