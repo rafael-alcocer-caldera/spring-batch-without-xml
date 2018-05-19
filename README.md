@@ -140,6 +140,34 @@ In Eclipse use: Run As -> Spring Boot App
 
 2018-05-19 13:22:17.463  INFO 3952 --- [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=job]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED]
 
+## Notes
+
+If you Download ZIP, you'll get the file: "spring-batch-without-xml-master.zip".
+If you have 7-Zip, choose extract here and you'll get the folder: "spring-batch-without-xml-master".
+
+Within Eclipse you can choose Import... -> General -> Existing Projects into Workspace
+Select root directory and browse the directory where you extracted the zip file.
+Select "Copy projects into workspace".
+You'll have the project imported with a lot of errors. Don't worry.
+Go to menu and select Project -> Clean...
+After select the project and clic to right button of the mouse to see the menu and select Maven -> Update Project...
+Don't forget to have selected:
+- Force Update of Snapshots/Releases
+- Update project configuration from pom.xml
+- Refresh workspace resources from local filesystem
+- Clean projects
+And clic OK.
+
+Or
+
+Within Eclipse you can choose Import... -> Maven -> Existing Maven Projects 
+Root directory and browse.
+If you have your folder in a different location of your workspace and
+Select "Add project(s) to working set" -> spring-batch-without-xml (this will be the name of your project).
+But if your folder is in your workspace the name will be: spring-batch-without-xml-master
+This is cleaner that the other. No need to do other things.
+But remember that you are not copying this folder into your workspace.
+
 ## License
 
 All work is under Apache 2.0 license
