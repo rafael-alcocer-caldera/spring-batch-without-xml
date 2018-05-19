@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>rafael.alcocer.caldera</groupId>
-	<artifactId>springbatch</artifactId>
+	<artifactId>spring-batch-without-xml</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
-	<name>SpringBatch</name>
-	<description>spring batch</description>
+	<name>spring-batch-without-xml</name>
+	<description>Spring Batch Without XML</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
